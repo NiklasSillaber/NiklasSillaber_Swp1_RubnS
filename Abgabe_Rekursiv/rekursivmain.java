@@ -97,5 +97,4 @@ public class rekursivmain {
             return 3 * i + sumFolgeRekursiv(i - 1);
         }
     }
-    
 }
