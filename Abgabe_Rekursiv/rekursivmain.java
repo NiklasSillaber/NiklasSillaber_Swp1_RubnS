@@ -64,27 +64,21 @@ public class rekursivmain {
         if (i <= 1){
             return 1;
         }
-        else {
-            return i + sumRekursiv(i - 1);
-        }
+        return i + sumRekursiv(i - 1);
     }
 
     public static int fakRekursiv(int i){ 
         if (i <= 1){
             return 1;
         }
-        else {
-            return i * fakRekursiv(i - 1);
-        }
+        return i * fakRekursiv(i - 1);
     }
 
     public static int powfakRekursiv(int base, int exp){ 
         if (exp < 1){
             return 1;
         }
-        else {
-            return base * powfakRekursiv(base, exp - 1);
-        }
+        return base * powfakRekursiv(base, exp - 1);
     }
 
     //Zusatz Summe der Folge an = 3 * n bis zum n. Folgenglied berechnen
@@ -93,8 +87,6 @@ public class rekursivmain {
         if (i < 1){
             return 0;
         }
-        else {
-            return 3 * i + sumFolgeRekursiv(i - 1);
-        }
+        return 3 * i + sumFolgeRekursiv(i - 1);
     }
 }
