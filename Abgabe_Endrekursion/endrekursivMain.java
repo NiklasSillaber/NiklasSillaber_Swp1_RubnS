@@ -3,13 +3,13 @@ package Abgabe_Endrekursion;
 public class endrekursivMain {
     public static void main(String[] args) {
         System.out.println("Summenfunktion");
-        System.out.println("--> Rekursiv: " + sumRekursiv(5));
-        System.out.println("--> Endrekursiv: " + sumEndRekursiv(0, 5));
+        System.out.println("--> Rekursiv: " + sumRekursiv(21));
+        System.out.println("--> Endrekursiv: " + sumEndRekursiv(0, 21));
         System.out.println();
 
         System.out.println("Fakultätsfunktion");
-        System.out.println("--> Rekursiv: " + fakRekursiv(5));
-        System.out.println("--> Endrekursiv: " + fakEndRekursiv(1, 5));
+        System.out.println("--> Rekursiv: " + fakRekursiv(3));
+        System.out.println("--> Endrekursiv: " + fakEndRekursiv(1, 3));
         System.out.println();
 
         System.out.println("Hoch-Funktion");
@@ -18,8 +18,8 @@ public class endrekursivMain {
         System.out.println();
 
         System.out.println("Zusatz-Folge");
-        System.out.println("--> Rekursiv: " + sumFolgeRekursiv(4));
-        System.out.println("--> Endrekursiv: " + sumFolgeEndRekursiv(0, 4));
+        System.out.println("--> Rekursiv: " + sumFolgeRekursiv(6));
+        System.out.println("--> Endrekursiv: " + sumFolgeEndRekursiv(0, 6));
     }
 
     //rekursive Methoden
