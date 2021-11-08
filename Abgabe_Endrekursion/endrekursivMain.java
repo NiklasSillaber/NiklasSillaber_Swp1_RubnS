@@ -1,6 +1,6 @@
 package Abgabe_Endrekursion;
 
-public class main {
+public class endrekursivMain {
     public static void main(String[] args) {
         System.out.println("Summenfunktion");
         System.out.println("--> Rekursiv: " + sumRekursiv(5));
