@@ -19,7 +19,7 @@ public class endrekursivMain {
 
         System.out.println("Zusatz-Folge");
         System.out.println("--> Rekursiv: " + sumFolgeRekursiv(4));
-        //System.out.println("--> Endrekursiv: " + sumFolgeEndRekursiv(0, 4));
+        System.out.println("--> Endrekursiv: " + sumFolgeEndRekursiv(0, 4));
     }
 
     //rekursive Methoden
