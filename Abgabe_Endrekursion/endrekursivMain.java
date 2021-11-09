@@ -2,60 +2,72 @@ package Abgabe_Endrekursion;
 
 public class endrekursivMain {
     public static void main(String[] args) {
+
+        long start;
+        long stop;
+
         //Summe
-        long timeSumRe1 = System.nanoTime();
+        System.out.println("Summenfunktion");
+
+        start = System.nanoTime();
         int sumRe = sumRekursiv(21);
-        long timeSumRe2 = System.nanoTime();
+        stop = System.nanoTime();
 
-        long timeSumEndRe1 = System.nanoTime();
+        System.out.println("--> Rekursiv: " + sumRe + " Zeit: " + (stop - start) + "ns");
+
+        start = System.nanoTime();
         int sumEndRe = sumEndRekursiv(0, 21);
-        long timeSumEndRe2 = System.nanoTime();
+        stop = System.nanoTime();
         
-        //Fakultät
-        long timeFakRe1 = System.nanoTime();
-        int fakRe = fakRekursiv(3);
-        long timeFakRe2 = System.nanoTime();
+        System.out.println("--> Endrekursiv: " + sumEndRe + " Zeit: " + (stop - start) + "ns");
+        System.out.println();
 
-        long timeFakEndRe1 = System.nanoTime();
+        //Fakultät
+        System.out.println("Fakultätsfunktion");
+
+        start = System.nanoTime();
+        int fakRe = fakRekursiv(3);
+        stop = System.nanoTime();
+
+        System.out.println("--> Rekursiv: " + fakRe + " Zeit: " + (stop - start) + "ns");
+
+        start = System.nanoTime();
         int fakEndRe = fakEndRekursiv(1, 3);
-        long timeFakEndRe2 = System.nanoTime();
+        stop = System.nanoTime();
+
+        System.out.println("--> Endrekursiv: " + fakEndRe + " Zeit: " + (stop - start) + "ns");
+        System.out.println();
 
         //Potenzfunktion
-        long timePowfakRe1 = System.nanoTime();
-        int powfakRe = powfakRekursiv(5, 3);
-        long timePowfakRe2 = System.nanoTime();
+        System.out.println("Hoch-Funktion");
 
-        long timePowfakEndRe1 = System.nanoTime();
+        start = System.nanoTime();
+        int powfakRe = powfakRekursiv(5, 3);
+        stop = System.nanoTime();
+
+        System.out.println("--> Rekursiv: " + powfakRe + " Zeit: " + (stop - start) + "ns");
+
+        start = System.nanoTime();
         int powfakEndRe = powfakEndRekursiv(5, 3, 1);
-        long timePowfakEndRe2 = System.nanoTime();
+        stop = System.nanoTime();
+
+        System.out.println("--> Endrekursiv: " + powfakEndRe + " Zeit: " + (stop - start) + "ns");
+        System.out.println();
 
         //Zusatzfolge
-        long timeSumFolgeRe1 = System.nanoTime();
-        int sumFolgeRe = sumFolgeRekursiv(6);
-        long timeSumFolgeRe2 = System.nanoTime();
-
-        long timeSumFolgeEndRe1 = System.nanoTime();
-        int sumFolgeEndRe = sumFolgeEndRekursiv(0, 6);
-        long timeSumFolgeEndRe2 = System.nanoTime();
-
-        System.out.println("Summenfunktion");
-        System.out.println("--> Rekursiv: " + sumRe + " Zeit: " + (timeSumRe2 - timeSumRe1) + "ns");
-        System.out.println("--> Endrekursiv: " + sumEndRe + " Zeit: " + (timeSumEndRe2 - timeSumEndRe1) + "ns");
-        System.out.println();
-
-        System.out.println("Fakultätsfunktion");
-        System.out.println("--> Rekursiv: " + fakRe + " Zeit: " + (timeFakRe2 - timeFakRe1) + "ns");
-        System.out.println("--> Endrekursiv: " + fakEndRe + " Zeit: " + (timeFakEndRe2 - timeFakEndRe1) + "ns");
-        System.out.println();
-
-        System.out.println("Hoch-Funktion");
-        System.out.println("--> Rekursiv: " + powfakRe + " Zeit: " + (timePowfakRe2 - timePowfakRe1) + "ns");
-        System.out.println("--> Endrekursiv: " + powfakEndRe + " Zeit: " + (timePowfakEndRe2 - timePowfakEndRe1) + "ns");
-        System.out.println();
-
         System.out.println("Zusatz-Folge");
-        System.out.println("--> Rekursiv: " + sumFolgeRe + " Zeit: " + (timeSumFolgeRe2 - timeSumFolgeRe1) + "ns");
-        System.out.println("--> Endrekursiv: " + sumFolgeEndRe + " Zeit: " + (timeSumFolgeEndRe2 - timeSumFolgeEndRe1) + "ns");
+
+        start = System.nanoTime();
+        int sumFolgeRe = sumFolgeRekursiv(6);
+        stop = System.nanoTime();
+
+        System.out.println("--> Rekursiv: " + sumFolgeRe + " Zeit: " + (stop - start) + "ns");
+
+        start = System.nanoTime();
+        int sumFolgeEndRe = sumFolgeEndRekursiv(0, 6);
+        stop = System.nanoTime();
+
+        System.out.println("--> Endrekursiv: " + sumFolgeEndRe + " Zeit: " + (stop - start) + "ns");
     }
 
     //rekursive Methoden
