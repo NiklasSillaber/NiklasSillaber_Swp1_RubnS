@@ -13,6 +13,11 @@ public class main {
         
         System.out.println();
         System.err.println();
+        String a = "sabo";
+        char[] e = a.toCharArray();
+        a=e.toString();
+        System.out.println(Arrays.toString(e));
+        System.out.println(a);
         System.out.println(Arrays.toString(arr));
         System.out.println(Arrays.toString(car));
     }
@@ -39,9 +44,11 @@ public class main {
                     minX = j;
                 }
             }
-            int tmp = arr[i];
-            arr[i] = arr[minX];
-            arr[minX] = tmp; 
+            if(minX != i){
+                int tmp = arr[i];
+                arr[i] = arr[minX];
+                arr[minX] = tmp; 
+            }
         }
         return arr;
     }
