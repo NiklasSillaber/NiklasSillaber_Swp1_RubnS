@@ -27,27 +27,27 @@ public class main {
     static void quickSort(int[] arr, int low, int high) {
 
         if (low < high) {
-            // bibo ... ist an der richitgen stelle 
+            // pivot ... ist an der richitgen stelle 
             //alle kleineren links - alle größeren Rechts
-            int bibo = sortAroundBibo(arr, low, high);
+            int pivot = sortAroundPivot(arr, low, high);
  
-            //alle Elemente vor bibo und nach dem bibo sortieren
-            quickSort(arr, low, bibo - 1);
-            quickSort(arr, bibo + 1, high);
+            //alle Elemente vor bibo und nach dem pivot sortieren
+            quickSort(arr, low, pivot - 1);
+            quickSort(arr, pivot + 1, high);
         }
     }	
 
-    //alle kleineren links - alle größeren Rechts (vom BIBO)
-    static int sortAroundBibo(int[] arr, int low, int high) {    
-        //Bibo ist das letzte Element ... kann auch ein anderes sein
-        int bibo = arr[high];
+    //alle kleineren links - alle größeren Rechts (vom pivot)
+    static int sortAroundPivot(int[] arr, int low, int high) {    
+        //pivot ist das letzte Element ... kann auch ein anderes sein
+        int pivot = arr[high];
      
         int i = (low - 1);
  
         for(int j = low; j <= high - 1; j++) {
          
-            //schauen ob dieses Element kleiner als das Bibo ist
-            if (arr[j] < bibo) {
+            //schauen ob dieses Element kleiner als das pivot ist
+            if (arr[j] < pivot) {
                 i++;
                 swap(arr, i, j);
             }
