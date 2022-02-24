@@ -53,7 +53,7 @@ public class main {
             }
         }
         swap(arr, i + 1, high);
-        return (i + 1);
+        return (i   + 1);
     }
 
     //Funktion um Elemente in einem Array zu vertauschen
