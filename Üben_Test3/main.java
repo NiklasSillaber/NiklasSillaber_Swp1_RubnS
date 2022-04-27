@@ -1,25 +1,22 @@
 package Üben_Test3;
 
-import javax.swing.event.ChangeEvent;
-
 public class main {
 
     public static void main(String[] args) {
+        String s = "hallo";
+        int i = 1;
+        String[] sArr = {"Nicht"};
 
+        change(s, i, sArr);
         
-        
-        change();
-        
-        System.out.print(s + i);
+        System.out.print(s + i + sArr[0]);
 
     }
 
-    static String s = "hallo";
-    static int i = 1;
-
-    public static void change(){
+    public static void change(String s, int i, String[] sArr){
         s = "tschau";
         i = 2;
+        sArr[0] = "Juhu";
     }
     
 }
