@@ -27,8 +27,6 @@ public class main {
     static void quickSort(int[] arr, int low, int high) {
 
         if (low < high) {
-            // pivot ... ist an der richitgen stelle 
-            //alle kleineren links - alle größeren Rechts
             int pivot = sortAroundPivot(arr, low, high);
  
             //alle Elemente vor bibo und nach dem pivot sortieren
@@ -53,7 +51,7 @@ public class main {
             }
         }
         swap(arr, i + 1, high);
-        return (i   + 1);
+        return (i + 1);
     }
 
     //Funktion um Elemente in einem Array zu vertauschen
