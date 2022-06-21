@@ -12,8 +12,4 @@ public class main {
         System.out.println(schäfer.name());
 
     }
-
-   
-
-    
 }
