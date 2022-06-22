@@ -4,20 +4,22 @@ public interface Auto {
     public void fahren();
 }
 
-class BMW implements Auto {
+class Lambo implements Auto{
 
     @Override
     public void fahren() {
-        System.out.println("BRuuuuuuuuuuuuuuuuum");
+        System.out.println("BRUUUUUUUUM");
+        
     }
-    
+
 }
 
-class Seat implements Auto {
+class Seat implements Auto{
 
     @Override
     public void fahren() {
-        System.out.println("brum");
+        System.out.println("sdjsd");
+        
     }
-    
+
 }

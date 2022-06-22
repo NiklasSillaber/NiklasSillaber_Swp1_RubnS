@@ -1,25 +1,23 @@
 package Üben_SMÜ_Patterns.Factory;
 
 public class Factory {
-
-    public Auto create(Autotypen t){
+    public Auto create(Fahrzeuge z){
         Auto a;
-        switch(t){
-            case BMW:
-                a = new BMW();
+        switch(z){
+            case L:
+                a = new Lambo();
                 break;
-            case SEAT:
+            case S:
                 a = new Seat();
                 break;
             default:
-                a = new BMW();
+                a = new Seat();
                 break;
         }
         return a;
     }
-    
 }
 
-enum Autotypen {
-    BMW, SEAT
+enum Fahrzeuge {
+    L, S
 }
